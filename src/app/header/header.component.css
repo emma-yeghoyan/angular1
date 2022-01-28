@@ -1,0 +1,31 @@
+
+header {
+    display: flex;
+    align-items: baseline;
+    background-color: #fff;
+    padding: 20px 30px;
+    height: 60px;
+}
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+.flex-container > a {
+display: block;
+width: 100px;
+margin: 10px;
+text-align: center;
+font-size: 20px;
+padding: 10px 5px;
+}
+.flex-container > a:hover{
+    border-bottom: 2px solid black;
+}
+
+.title {
+    font-size: 28px;    
+}
+.push {
+    margin-left: auto;
+}

@@ -1,0 +1,12 @@
+<div class='container'>
+    <h1>Users</h1>
+    <div class=' user-row' *ngFor="let item of users" (click)="hendelUserClick(item)">
+        {{ item.id }}- {{ item.name}} , Total Todo items: {{ item.todos.length}} 
+        <div  *ngIf="selectedUser == item" class="todo-container" >
+            <h3>To do list</h3>
+            <div class='todo-row' *ngFor="let todo of item.todos">
+                {{ todo.id }}- {{ todo.title}} 
+            </div>
+        </div>
+    </div>
+</div>
