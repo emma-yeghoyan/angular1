@@ -43,3 +43,7 @@ a {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.active-link {
+    border-bottom: 2px solid black;
+}

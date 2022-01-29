@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { ITodo } from './models/todo.model';
 import { IUser } from './models/user.model';
 
 @Injectable()
@@ -54,6 +55,31 @@ export class UsersService {
             title: "Todo 2",
           }
         ]
+      }
+    ]
+  }
+
+  getTodoListData(): ITodo[] {
+    return [
+      {
+        id: 1,
+        title: 'Todo1',
+      },
+      {
+        id: 2,
+        title: 'Todo2',
+      },
+      {
+        id: 3,
+        title: 'Todo3',
+      },
+      {
+        id: 4,
+        title: 'Todo4',
+      },
+      {
+        id: 5,
+        title: 'Todo5',
       }
     ]
   }

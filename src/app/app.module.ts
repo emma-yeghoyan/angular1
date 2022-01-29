@@ -9,6 +9,8 @@ import { ToDosComponent } from './to-dos/to-dos.component';
 import { HeaderComponent } from './header/header.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UsersService } from './users.service';
+import { UserCardComponent } from './users/user-card/user-card.component';
+import { TodoCardComponent } from './to-dos/todo-card/todo-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { UsersService } from './users.service';
     UsersComponent,
     ToDosComponent,
     HeaderComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UserCardComponent,
+    TodoCardComponent
   ],
   imports: [
     BrowserModule,

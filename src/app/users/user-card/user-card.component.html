@@ -1,0 +1,10 @@
+<div class='user-row' (click)="handleClick()">
+    {{ userData?.id }}- {{ userData?.name}} , Total Todo items: {{ userData?.todos?.length}} 
+    <div *ngIf="showTodoList" class="todo-container" >
+        <h3>To do list</h3>
+        <p *ngIf="!userData?.todos?.length">No Items</p>
+        <div class='todo-row' *ngFor="let todo of userData?.todos">
+            {{ todo.id }}- {{ todo.title}} 
+        </div>
+    </div>
+</div>
