@@ -11,6 +11,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { UsersService } from './users.service';
 import { UserCardComponent } from './users/user-card/user-card.component';
 import { TodoCardComponent } from './to-dos/todo-card/todo-card.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,15 @@ import { TodoCardComponent } from './to-dos/todo-card/todo-card.component';
     HeaderComponent,
     PageNotFoundComponent,
     UserCardComponent,
-    TodoCardComponent
+    TodoCardComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

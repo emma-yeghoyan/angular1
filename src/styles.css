@@ -12,10 +12,18 @@ a {
     cursor: pointer;
 }
 
+input {
+    outline: 0;
+}
+
+.invalid-control{
+    border: 2px solid red;
+}
+
 .container {
     position: relative;
     width: 90%;
-    margin: auto;
+    margin: 100px auto 0 auto;
     padding: 20px;
 }
 
@@ -46,4 +54,30 @@ a {
 
 .active-link {
     border-bottom: 2px solid black;
+}
+
+form {
+    position: relative;
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.form-control input {
+    position: relative;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+button {
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: 0;
+    width: 240px;
+    cursor: pointer;
 }
